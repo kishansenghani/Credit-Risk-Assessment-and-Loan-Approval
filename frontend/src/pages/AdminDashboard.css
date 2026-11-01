@@ -1,0 +1,52 @@
+/* AdminDashboard specific overrides – main layout in App.css */
+@media (max-width: 1024px) {
+  .kpi-row { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .sidebar { display: none; }
+  .kpi-row { grid-template-columns: 1fr 1fr; }
+}
+
+/* ── SHAP Lines in Detail Modal ───────────────────────── */
+.detail-row-shap {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0.5rem !important;
+  padding: 0.6rem 0 !important;
+}
+
+.shap-lines-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.shap-readable-line {
+  font-size: 0.825rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: var(--radius-sm, 6px);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text, #f1f5f9);
+  line-height: 1.4;
+  border-left: 3px solid #64748b;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.shap-readable-line strong {
+  color: var(--text, #ffffff);
+}
+
+.shap-readable-line.positive {
+  border-left-color: #10b981;
+  background: rgba(16, 185, 129, 0.07);
+}
+
+.shap-readable-line.negative {
+  border-left-color: #ef4444;
+  background: rgba(239, 68, 68, 0.07);
+}
+

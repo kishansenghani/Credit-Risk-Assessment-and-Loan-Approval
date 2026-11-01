@@ -1,0 +1,47 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# ── Kaggle credentials ───────────────────────────────────────────────────────
+kaggle.json
+
+# ── Raw data ─────────────────────────────────────────────────────────────────
+data/*
+!data/loan_data.csv
+
+# ── Environment ─────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Database ─────────────────────────────────────────────────────────────────
+backend/database.db
+
+# ── Model artifacts (allow current lightweight model) ────────────────────────
+backend/models/*.pkl
+models/*.pkl
+models/*.joblib
+!backend/models/model.pkl
+!models/model.pkl
+
+# ── Node / frontend ──────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+notebooks/.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+# ── Misc ─────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log

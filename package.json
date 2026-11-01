@@ -1,0 +1,14 @@
+{
+  "name": "loan-risk-analysis",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Loan Approval and Credit Risk Analysis System",
+  "scripts": {
+    "backend": "cd backend && python app.py",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "concurrently --names \"BACKEND,FRONTEND\" --prefix-colors \"blue,green\" \"cd backend && python app.py\" \"cd frontend && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
